@@ -1,7 +1,7 @@
 
 from numpy.lib.function_base import select
 import streamlit as st
-#import grayscale
+import grayscale
 import bgr
 import blur
 import Edge_detection
