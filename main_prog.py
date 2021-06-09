@@ -2,6 +2,7 @@
 
 from numpy.lib.function_base import select
 import streamlit as st
+import cv2
 #import grayscale
 #import bgr
 #import blur
@@ -27,12 +28,12 @@ import streamlit as st
 st.sidebar.title('NAVIGATION')
 select = st.sidebar.selectbox("Go To", ["Image" , "Video"])
 
-if(select == "Image"):
-    selection = st.sidebar.radio("Go to", list(pages.keys()))
-    page = pages[selection]
-    page.main_image()
-else:
-    type_ = st.sidebar.selectbox("Go to", ["Upload a video file", "Use webcam"])
-    selection = st.sidebar.radio("Go to", list(pages.keys()))
-    page = pages[selection]
-    page.main_video(type_)
+#if(select == "Image"):
+#    selection = st.sidebar.radio("Go to", list(pages.keys()))
+#    page = pages[selection]
+#    page.main_image()
+#else:
+#    type_ = st.sidebar.selectbox("Go to", ["Upload a video file", "Use webcam"])
+#    selection = st.sidebar.radio("Go to", list(pages.keys()))
+#    page = pages[selection]
+#    page.main_video(type_)
